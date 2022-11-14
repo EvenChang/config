@@ -111,6 +111,11 @@ alias kc='kubectl'
 alias fd='fdfind'
 export PATH=/usr/local/go/bin:$PATH
 
+#PROMPT
 PROMPT="%{$fg[cyan]%}"Even_Linux"%{$fg[blue]%} ${PROMPT}"
+RPROMPT='%{$fg_bold[green]%}[%D %T]'
+
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=239'
 . /usr/share/autojump/autojump.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
