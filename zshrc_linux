@@ -109,13 +109,14 @@ alias gl='git log'
 alias gd='git diff'
 alias kc='kubectl'
 alias fd='fdfind'
+alias nv='nvim'
 export PATH=/usr/local/go/bin:$PATH
 
 #PROMPT
 PROMPT="%{$fg[cyan]%}"Even_Linux"%{$fg[blue]%} ${PROMPT}"
 RPROMPT='%{$fg_bold[green]%}[%D %T]'
 
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=239'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
 . /usr/share/autojump/autojump.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
