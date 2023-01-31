@@ -113,7 +113,7 @@ alias nv='nvim'
 export PATH=/usr/local/go/bin:$PATH
 
 #PROMPT
-PROMPT="%{$fg[cyan]%}"Even_Linux"%{$fg[blue]%} ${PROMPT}"
+PROMPT="%{$fg[cyan]%}"Even_"%m%{$fg[blue]%} ${PROMPT}"
 RPROMPT='%{$fg_bold[green]%}[%D %T]'
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
