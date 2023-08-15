@@ -31,3 +31,5 @@ sudo npm install tree-sitter-cli
 sudo cp -r node_modules  /usr/local/lib/
 ```
 > After copy neovim config remember to nvim  plugins-setup.lua and save it to install plugin.
+
+#Note: Remember copy config folder's content into ./config and nvim plugins-setup.lua file for installing plugin
