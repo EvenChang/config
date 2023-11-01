@@ -9,4 +9,4 @@ require("even.plugins.telescope")
 require("even.plugins.nvim-cmp")
 require("even.plugins.treesitter")
 require("even.plugins.gitsigns")
-
+require("even.plugins.toggleterm")
