@@ -24,9 +24,22 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 ##  NeoVim
 ```
-sudo apt-get update
-sudo add-apt-repository ppa:neovim-ppa/unstable
-sudo apt-get install neovim
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+./nvim.appimage
+
+
+If the ./nvim.appimage command fails, try:
+
+./nvim.appimage --appimage-extract
+./squashfs-root/AppRun --version
+
+# Optional: exposing nvim globally.
+sudo mv squashfs-root /
+sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
+nvim
+
+
 sudo npm install tree-sitter-cli
 sudo cp -r node_modules  /usr/local/lib/
 ```
