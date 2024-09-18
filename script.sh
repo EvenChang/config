@@ -19,6 +19,8 @@ chmod u+x nvim.appimage
 sudo mv squashfs-root /
 sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 
+cp -r nvim ~/.config
+
 sudo apt-get install npm
 sudo npm install tree-sitter-cli
 
